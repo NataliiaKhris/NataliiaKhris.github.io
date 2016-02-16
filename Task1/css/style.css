@@ -1,0 +1,22 @@
+body {
+	background-color:#DCDCDC;
+	margin-top: 10px;
+}
+.wrapper {
+	background-color: #FFFFFF;
+	width: 512px;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+	font-size: 12pt;
+	padding-top: 5px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
