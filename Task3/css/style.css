@@ -26,7 +26,6 @@ body {
 	margin: 0 50px 0 50px;
 	padding: 0;
 	list-style-type: none;
-	width: 100;
 	height: 40px;
 	text-align: left;
   	background-color: #565051;
@@ -67,6 +66,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: gray;
+	height: 100%;
+    box-sizing: border-box;
 }
 .sidebar_li a:hover {
 	padding-left: 35px;
