@@ -1,5 +1,6 @@
 body {
-background: url(../images/bg-2.png) repeat-x;
+background: url(../images/bg-2.png);
+background-color: rgb(0, 118, 168); 
 font-family: Tahoma, sans-serif;
 }
 
