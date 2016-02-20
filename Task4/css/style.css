@@ -1,9 +1,8 @@
 body {
-background: url(../images/bg-2.png);
-background-color: rgb(0, 118, 168); 
-font-family: Tahoma, sans-serif;
+background-image: url(../images/bg-2.png);
+background-repeat: repeat-x;
+background-attachment: fixed;
 }
-
 .parent {
 overflow: hidden;
 width: 1000px;
@@ -28,6 +27,11 @@ float: left;
 .contacts p {
 	margin: 6px auto;
 }
+.contacts p a {
+	text-decoration: none;
+	color: #128aa7;
+	font-size: 12px;
+}
 .countries {
 	margin: 30px 30px 10px auto;
 	float: right;
@@ -36,7 +40,6 @@ float: left;
 .countries li{
 	display: inline-block;
 }
-
 .countries a{
 	display: block;
 	width: 53px;
@@ -97,19 +100,18 @@ float: left;
 .menu>li:last-child {
 	padding-right: 65px;
 }
-.menu span {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background-image: url(../images/triangl.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
 .menu a {
 	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
+}
+.triangle:after {
+	display: inline-block;
+	content: '';
+	width: 5px;
+	height: 5px;
+	margin: 5px;
+	background: transparent url(../images/triangl.png) no-repeat;
 }
 ul li ul {
 	display: none;
@@ -212,4 +214,8 @@ h2 {
 	color: #fff;
 	font-size: 12px;
 }
-
+.footer a {
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
