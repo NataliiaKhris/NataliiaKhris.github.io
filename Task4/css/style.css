@@ -15,6 +15,11 @@ box-shadow: -1px 1px 30px 0px #031d28,
 color: #128aa7;
 font-size: 12px;
 }
+
+img {
+display: block;
+}
+
 .logo {
 margin: 11px auto 0px 30px;
 float: left;
