@@ -1,0 +1,43 @@
+*{
+margin:0;
+padding: 0;
+}
+body {
+	background: #939393;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 50px auto;
+	width: 500px;
+	height: 550px;
+	background: white;
+}
+td {
+	border: 6px solid #000;
+}
+
+.height {
+	height: 35px;
+}
+.width {
+	width: 40px;
+}
+.width1 {
+	width: 130px;
+}
+.yellow {
+	background: url(../images/yellow.png);
+}
+.red {
+	background: url(../images/red.png);
+}
+.blue {
+	background: url(../images/blue.png);
+}
+.black {
+	background: url(../images/black.png);
+}
+.white {
+	background: white;
+}
