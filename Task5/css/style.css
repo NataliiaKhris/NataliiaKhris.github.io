@@ -1,116 +1,151 @@
-@font-face{
-	font-family: "Helvetica Neue";
-	src: url(../fonts/helveticaneuecyr-light.otf);
+html {
+    font-family: 'helveticaneuecyrlight';
+    src: url('fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'helveticaneuecyrmedium';
+    src: url('fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneuecyr-medium-webfont.svg#helveticaneuecyrmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 body {
-	background-color: #939393;
+    background-color: #939393;
 }
-	
+    
 .parent {
-	position: relative;
-	width: 1215px;
-	height: 1026px;
-	background-image: url(../images/background.png);
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	box-shadow: 0 10px 10px rgba(0,0,0,0.3)
-}
-a {
-	color: #60b5ed;
-	text-decoration: none;
+    position: relative;
+    width: 1215px;
+    height: 1026px;
+    background-image: url(../images/background.png);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3)
 }
 .header {
-	height: 36px;
-	background-image: url(../images/menu.png);
+    height: 36px;
+    background-image: url(../images/menu.png);
 }
 .header li {
-	float: right;
+    float: right;
 }
-.navmenu li:hover {
-	background: #4eabda;
-}  
-.navmenu a:hover {
-	color: #ffffff;
+a {
+    color: #60b5ed;
+    text-decoration: none;
 }
+
 .header a {
-	display: block;
-	padding: 0 15px;
-	line-height: 36px;
-}
-.navmenu {
-	color: #ffffff;
-	list-style: none;
+    display: block;
+
+    padding: 0 15px;
+    line-height: 36px;
 }
 
 .navmenu li {
-	float: right;
-	height: 36px;
-	padding: 0 15px;
+    float: right;
+    height: 36px;
+    padding: 0 5px;
 }
-	
+.navmenu li a:hover {
+    background: #4eabda;
+    color: #ffffff;
+} 
+
 .navmenu li a {
-	display: inline-block;
-	padding: 0 5px;
-	text-decoration: none;
-	color: #53a4dd;
-	font-size: 14px;
-	position: left;
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #53a4dd;
+    font-size: 16px;
+    position: left;
 }
 .auth li:last-child {
-	background: url(../images/linemenu.png) no-repeat;
+    background: url(../images/linemenu.png) no-repeat;
 }
 .auth li:last-child a{
-	display: block;
-	height: 36px;
-	margin-left: 20px;
-	padding-left: 30px;
-	background: url(../images/flag.png) left center no-repeat;
+    display: block;
+    height: 36px;
+    margin-left: 20px;
+    padding-left: 30px;
+    background: url(../images/flag.png) left center no-repeat;
+}
 
+.auth li:first-child {
+    margin-right: 20px;
+    padding: 0px;
 }
 .auth li:first-child a{
-	display: block;
-	margin-right: 20px;
-	background: url(../images/bgr.png);
+    display: inline-block;
+    height: 36px;
+    padding: 0 10px;
+    
+}
+.auth li:first-child {
+    margin-right: 20px;
+    padding: 0px;
+}
 
+.auth span {
+    color: #ffffff;
+}
 
+.auth li:first-child:hover {
+    background: linear-gradient(to bottom, #4faedb, #2f7bc5);
+}
+.auth li:first-child a:hover{
+
+    text-decoration: underline;
 }
 .auth a {
-	color: #ffffff;
-}
-.underline {
-	text-decoration: underline;
+    color: #ffffff;
 }
 .wrapper {
-	width: 570px;
-	height: 610px;
-	position: absolute;
-	top: 214px;
-	left: 350px;
-	right: 305px;
+    width: 570px;
+    height: 610px;
+    position: absolute;
+    top: 214px;
+    left: 350px;
+    right: 305px;
 }
 
 .form h1 {
-	color: #ffffff;
-	font-size: 20px;
-	text-align: center;
-	padding: 20px;
-	margin-bottom: 2px;
-	background: rgba(0,0,0,0.63);
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2px;
+    background: rgba(0,0,0,0.63);
 }
 
 h2 {
     position: relative;
     overflow: hidden;
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 16px;
     text-align: center;
     color: #838482;
   }
-  h2 > span {
+h2 > span {
     display: inline-block;
-    margin: 0 .4em;
+    margin-top: 0px;
+    margin-bottom: 15px;
   }
   h2 > span:before,
   h2 > span:after {
@@ -119,7 +154,7 @@ h2 {
     width: 100%;
     border-top: 1px solid #666666;
     border-bottom: 1px solid #000000;
-    margin-top: .6em;
+    margin-top: 10px;
   }
   h2 > span:before {
     margin-left: -102%;
@@ -127,71 +162,71 @@ h2 {
   h2 > span:after {
     margin-left: 2%;
   }
-  .back {
-  	
-  	width: 100%;
-  	height: 100%;
-  	background: rgba(0,0,0,0.63);
+
+.back {
+    display: block;
+    flex-direction:column;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background: rgba(0,0,0,0.63);
  }
-  
-input#facebook {
-	height: 35px;
-	width: 275px;
-	margin: 50px 150px 20px;
-	padding-left: 38px;
-	border: 0px;
-	background: url(../images/logfacebook.png) center no-repeat;
-	border-radius: 5px;
-}
+ .back a {
+    margin: 30px auto 30px;
+    display: block;
+    height: 35px;
+    background: url(../images/logfacebook.png) center no-repeat;
+    border-radius: 5px;
+ }
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-	display: block;
-	height: 36px;
-	width: 257px; 
-	padding-left: 18px;
-	margin: 15px auto;
-	border: 0px;
-	background: #0f0f0f;
-	border-bottom: 1px solid #484847;
+    display: block;
+    height: 36px;
+    width: 300px;
+    padding-left: 18px;
+    margin: 15px auto; 
+    background: #0f0f0f;
+    border: 0px;
+    border-bottom: 1px solid #484847;
+    font-size: 13px;
 }
+
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-	background: #1b5288;
-	border: 0px;
-	border-bottom: 1px solid #689bcd;
-	-webkit-box-shadow: 0px 0px 6px 2px #437da8;
-	box-shadow: 0px 0px 6px 2px #437da8;
+    background: #1b5288;
+    border: 0px;
+    border-bottom: 1px solid #689bcd;
+    -webkit-box-shadow: 0px 0px 6px 2px #437da8;
+    box-shadow: 0px 0px 6px 2px #437da8;
 }
-input[type="checkbox"] {
-	display: inline-block;
-	margin-left: 150px;
+label {
+    display: block;
+    width: 275px;
+    margin: 20px auto;
+    }
+label span {
+    color: #ccc;
+    font-size: 15px;
 }
-.back span {
-	color: #fff;
-	font-size: 14px;
-}
-.create {
-	display: block;
-	width: 275px;
-	margin: 20px 200px;
-}
-#account {
-	width: 150px;
-	height: 35px;
-	margin: 10px auto;
-	border: 0px;
-	border-radius: 4px;
-	color: #fff;
-	text-align: center;
-	background: url(../images/bcg_account.png) repeat-x;
+#create{
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin: 10px auto;
+    border: 0px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    background: url(../images/bcg_account.png) repeat-x;
 }
 
 p {
-	color: #ccc;
-	font-size: 13px;
-	margin: 0 120px;
-	text-align: center;
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    color: #ccc;
+    font-size: 11px;
 }
-

@@ -5,13 +5,16 @@
 		<title>Homework5</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+
 	</head> 
 
 	<body>
 		<div class="parent">
 			<div class="header">
 				<ul class="auth">
-					<li><a href="#">Ola! <span class="underline">Entrar</span> ou <span class="underline"> Cadastre-se</span></a></li>	
+					<li>
+						<span>Ola!</span><a href="#">Entrar</a><span>ou</span><a href="#">Cadastre-se</a>
+					</li>
 					<li><a href="#">Minhas Ofertas</a></li>
 				</ul>
 				<ul class="navmenu">
@@ -27,19 +30,22 @@
 					<h1>Cadastre-se</h1>
 				</div>
 				<div class="back">
-					<form action="#"><input type="submit" value="" id="facebook">
+					<a href="#" alt="Facebook" name="log-face" id="log-fa" value="" ></a>
 					<h2><span>OU</span></h2>
-					<input type="text" name="First name" id="firstname" placeholder="First Name">
+					<input type="text" name="First name" id="firstname" placeholder="First Name" required="">
 					<input type="text" name="Last name" id="lastname" placeholder="Last Name">
 					<input type="email" name="Email Address" id="email" placeholder="Email Address">
 					<input type="password" name="password" id="password" placeholder="Choose Password">
 					<input type="password" name="re_password" id="repassword" placeholder="Password Confirm">
-					<input type="checkbox" name"" id"send">
-					<span>Send me YouBike updates and tips</span>
-						
-					<div class="create">
-						<input type="submit" value="Create my account" id="account">
-					</div>
+					<label for="send">
+						<input type="checkbox" name="" id="send">
+						<span>Send me Youbike updates and tips</span>
+					</label>	
+					
+					<input type="submit" value="Create my account" id="create">
+
+					
+					
 					<p>By clicking the button above, you agree to the Terms of Service Xiew our Primacy Policy.</p>
 				</div>	
 			</div>	
