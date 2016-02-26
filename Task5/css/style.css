@@ -163,7 +163,7 @@ h2 > span {
     margin-left: 2%;
   }
 
-.back {
+form {
     display: block;
     flex-direction:column;
     width: 100%;
@@ -171,7 +171,7 @@ h2 > span {
     position: absolute;
     background: rgba(0,0,0,0.63);
  }
- .back a {
+ form a {
     margin: 30px auto 30px;
     display: block;
     height: 35px;
