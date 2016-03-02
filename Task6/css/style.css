@@ -26,13 +26,13 @@ background-color: #939393;
 
 body {
     width: 1000px;
-    height: 1210px;
+    height: 1320px;
     margin: 0 auto;
     background-color: #fff;
     /*padding: 0 45px;*/
     font-family: "lucida Sans Unicode Regular";
     
-    /*box-shadow: 1px;*/
+    /*box-shadow: ;*/
 }
 header {
     padding: 18px 46px 0 45px; 
@@ -47,19 +47,21 @@ header {
 .contacts span {
     
     flex-basis: 280px;
-    padding-left: 30px;
-    padding-top: 5px;
-    font-size: 16px;
+    padding-left: 32px;
+    padding-top:4px;
+    font-size: 19px;
+    font-family: Arial;
     color: #5e696d;
     background: url(../img/phone_button.png) left top no-repeat;
 }
             form.login {
                 display: block;
                 position: relative;
-                width: 470px; 
-                height: 24px;
-                margin-left: 10px;
-                padding-left: 25px;
+                width: 472px; 
+                height: 25px;
+                margin-top: -2px;
+                margin-left: 7px;
+                padding-left: 20px;
                 background: url(../img/log_button.png) left no-repeat, linear-gradient(to top, #0d365a, #1e6383);
                 border-radius: 4px;                           
                 box-shadow: 1px 1px 3px rgba(150, 150, 150, 0.75);
@@ -69,18 +71,22 @@ form a {
     display: inline-block;
     font-size: 11px;
     color: #fff; 
+    padding-top: 0px;
 }
 a.entr {
     padding-left: 5px;
+    padding-top: 8px;
     text-decoration: none;
 }
 a.reg {
-    padding-left: 5px;
+    padding-left: 4px;
     text-decoration: none;
     border-left: 1px solid #fff;
 }
 a.forget {
-    padding-left: 20px;
+    padding-left: 12px;
+    font-size: 11px;
+    font-family: Arial;
     color: #bfbfbf;
 }
 .list {
@@ -88,31 +94,37 @@ a.forget {
     justify-content: space-around;
     border: 1px solid #ccd1d3;
     border-radius: 10px;
-    margin: 0 auto;
-    height: 22px;
-    width: 75px;
+    margin-left: 17px ;
+    margin-top: -1px;
+    height: 20px;
+    width: 72px;
     box-shadow: 0px 2px 8px -2px rgba(206,211,213,1);
 }
-a.home,
-a.nav,
+
+a.nav {
+    padding-left: -8px;
+}
 a.mail {
-    padding-top: 2px;
+    padding-left: 0px;
+}
+a.home {
+    padding-left: 0px;
 }
 
 #log,
 #pass {
     display: inline-block;
     position: relative;
-    width: 110px;
-    margin: 4px 0;
-    /*padding: 0 0 0 5px;*/
+    width: 112px;
+    margin: -1px 0;
+    padding-top: 1px;
     font-size: 11px;
     color: #97a2a6;
     border: 1px solid;
     border-radius: 2px;    
 }
 .logo {
-    height: 234px;
+    height: 236px;
     background: url(../img/bcg_logo.png)no-repeat;
 }
 
@@ -124,9 +136,10 @@ padding-left: 2px;
   /*/*  nav_menu*/
 nav{
     width: 912px;
-    height: 25px;
-    margin: 0 auto;
-    padding: 4px 0px;
+    height: 28px;
+    margin-top: 5px;
+    padding-top: 7px;
+    padding-left: 1px;
     line-height: 25px;
     background: url(../img/medium-menu-bg.png);
     box-shadow: 1px 1px 5px #000;
@@ -138,7 +151,7 @@ nav ul{
 }
 
 nav ul:first-child{
-    margin-left: 126px;
+    margin-left: 125px;
 }
 
 nav li{
@@ -168,16 +181,16 @@ nav .nav-links-2{
 }
 
 .nav-links-3{
-    padding-left: 10px;
+    padding-left: 9px;
 }
 
 .nav-links-4{
-    padding-left: 10px;
+    padding-left: 9px;
     letter-spacing: -0.2px;;
 }
 
 .nav-links-5{
-    padding-left: 6px;
+    padding-left: 5px;
     letter-spacing: -0.2px;
 }
 
@@ -186,8 +199,8 @@ nav a:hover{
     background: url(../img/link-hover.png);
 }
 
-ul.customer{
-    margin-left: 51px;
+ul.customer {
+    margin-left: 50px;
 }
 
 nav li.basket > a,
@@ -195,8 +208,8 @@ nav li.sum > a{
     padding: 0px 5px;
     text-transform: lowercase;
 }
-nav li.basket{
-    padding-left: 24px;
+nav li.basket {
+    padding-left: 23px;
     background: url("../img/busket.png") left 4px no-repeat;
 }
 
@@ -240,7 +253,7 @@ nav li.sum > a:hover
 }
 .sum{
     margin-right: 13px;
-    margin-left: -1px;
+    margin-left: -2px;
 }
 .sum a{
     color: #8a9296;
@@ -320,17 +333,18 @@ fieldset.auto-search > h2{
     color: #77858b;
     font-family: 'Arial', sans-serif;
     font-size: 9px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.1px;
 }
 
 .form-filters .h4{
     display: inline-block;
+    padding-top: 2px;
     width: 73px;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.3px;
 }
 
 div.dco > label > .h4{
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 div.dco > label > .h4 > .span{
@@ -340,7 +354,7 @@ div.dco > label > .h4 > .span{
 div.dco > label:nth-child(1) > select{
     width: 59px;
     height: 16px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 div.dco > label:nth-child(2) > select{
@@ -739,11 +753,11 @@ aside li{
 
 aside .catalog-disks{
     position: relative;
-    top: -8px;
+    top: -6px;
 }
 
 aside #list-disks li{
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     letter-spacing: -0.2px;
 }
 
@@ -754,7 +768,7 @@ aside #list-disks li{
 
 .catalog-bolts{
     width: 121px;
-    margin-top: -8px;
+    margin-top: -11px;
     padding-left: 29px;
     letter-spacing: -0.2px; 
 }
@@ -869,7 +883,7 @@ main .goods{
     font-family: "Lucida Sans Unicode", sans-serif;
 }
 
-.clearfix:after{
+.clearfix:after {
     content: '';
     display: block;
     clear: right;
@@ -923,7 +937,8 @@ main .row article:last-child{
     letter-spacing: -0.2px;
 }
 
-/*pixel perfect*/
+
+
 
 .row article:nth-child(3) > h3{
     margin-left: -2px;
@@ -950,6 +965,7 @@ main div.row:nth-child(3){
     letter-spacing: 0.01px;
 }
 
+
 article figure{
     position: relative;
     height: 127px;
@@ -971,6 +987,7 @@ figure img{
 footer{
     width: 909px;
     margin: 0px auto;
+    padding-top: -10px;
     text-align: center;
 }
 
@@ -989,7 +1006,7 @@ footer li{
     vertical-align: middle;
 }
 
-/*again pixel perfect*/
+/* pixel perfect*/
 
 div.partners-logo > ul > li:nth-child(1){
     margin-top: 5px;
@@ -1013,6 +1030,7 @@ div.partners-logo > ul > li:nth-child(8){
     height: 92px;
     padding-top: 8px;
     background: #213a4d;
+
 }
 
 .footer-bg li a{
@@ -1043,7 +1061,7 @@ div.partners-logo > ul > li:nth-child(8){
     border-right: none;
 }
 
-/*and again shaman dances around pixel perfect*/
+
 div.footer-bg > ul > li:nth-child(1) > a{
     right: 20px;
     top: 0px;
@@ -1120,6 +1138,6 @@ div.footer-bg > ul > li:nth-child(7) > a{
 }
 
 .checkbox-custom:focus + label {
-  outline: 1px solid #ddd; /* focus style */
-}
+  outline: 1px solid #ddd; /* focus style 
+}*/
 
